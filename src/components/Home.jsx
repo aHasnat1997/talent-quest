@@ -12,6 +12,7 @@ const Home = () => {
       .then(res => res.json()).then(data => setCategories(data))
   }, []);
 
+
   const jobs = useLoaderData().slice(0, 4);
   // console.log(jobs);
 
