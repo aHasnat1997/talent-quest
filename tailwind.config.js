@@ -11,10 +11,9 @@ export default {
       "white": "#FFFFFF",
       "accent": "#aff799",
       "trans": "#00000000",
-      "dark": "#000000",
-
+      "dark": "#131820",
+      "gray": "#808080",
     },
   },
   plugins: [],
 }
-
