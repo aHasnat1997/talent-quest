@@ -19,7 +19,7 @@ const Nav = () => {
           <span className='font-bold text-secondary'>Q</span>uest
         </Link>
       </h1>
-      <ul className={`duration-300 text-4xl lg:text-xl bg-accent w-full lg:w-1/3 lg:bg-trans p-4 lg:flex lg:justify-between lg:items-center absolute top-16 z-50 lg:static ${open? '-left-1':'-left-96'}`}>
+      <ul className={`duration-300 text-4xl lg:text-xl bg-accent w-full lg:w-1/3 lg:bg-trans p-4 lg:flex lg:justify-between lg:items-center absolute top-16 z-50 lg:static ${open? '-left-1':'-left-[60rem]'}`}>
         <li className='my-4 lg:my-0'>
           <NavLink className={({ isActive }) => isActive ? 'text-primary' : ''} to='/'>
             Home

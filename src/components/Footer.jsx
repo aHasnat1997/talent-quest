@@ -5,7 +5,7 @@ import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className='bg-dark w-full mt-20 py-24'>
-      <div className='max-w text-gray flex flex-col gap-8 lg:flex-row justify-between'>
+      <div className='max-w text-gray grid md:grid-cols-2 lg:grid-cols-5 gap-8'>
         <div>
           <h1 className='text-3xl lg:text-4xl text-white'>
             <Link to='/'>

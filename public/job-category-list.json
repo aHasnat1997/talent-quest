@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Account & Finance",
+    "available": "300",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1571/1571072.png"
+  },
+  {
+    "id": 2,
+    "title": "Creative Design",
+    "available": "100+",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1875/1875744.png"
+  },
+  {
+    "id": 3,
+    "title": "Marketing & Sales",
+    "available": "150",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1997/1997897.png"
+  },
+  {
+    "id": 4,
+    "title": "Engineering Job",
+    "available": "224",
+    "icon": "https://cdn-icons-png.flaticon.com/512/1544/1544063.png"
+  }
+]
