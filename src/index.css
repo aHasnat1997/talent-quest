@@ -10,6 +10,11 @@
   @apply bg-gradient-to-r from-primary to-secondary px-4 py-3 rounded-md text-white font-semibold hover:bg-gradient-to-r hover:from-secondary hover:to-primary;
 }
 
-.h{
+.banner {
+  @apply bg-[url(assets/images/banner.jpg)] bg-cover bg-no-repeat bg-center
+}
+
+.test {
   color: #808080;
+  background-image: url(assets/images/banner.jpg);
 }

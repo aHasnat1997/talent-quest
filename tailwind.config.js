@@ -5,6 +5,24 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    extend: {
+      "banner": "url(src/assets/images/banner.jpg)",
+      animation: {
+        text: 'text 5s ease infinite',
+      },
+      keyframes: {
+        text: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center',
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center',
+          },
+        },
+      },
+    },
     colors: {
       "primary": "#7E90FE",
       "secondary": "#9873FF",
