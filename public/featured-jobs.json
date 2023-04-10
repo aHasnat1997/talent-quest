@@ -1,0 +1,205 @@
+[
+  {
+    "id": 1,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/905px-Amazon_logo.svg.png",
+    "job_title": "Marketing Manager",
+    "company_name": "Amazon",
+    "job_place": "Onsite",
+    "location": "San Francisco, CA",
+    "job_time": "Full-time",
+    "salary": "$80,000 - $100,000",
+    "job_description": "We are looking for a talented Marketing Manager to lead our marketing team and drive the growth of our company's brand and revenue. The ideal candidate will have a strong understanding of marketing principles and a proven track record of successful marketing campaigns.",
+    "job_responsibility": [
+      "Develop and implement comprehensive marketing strategies to increase brand awareness, drive customer acquisition, and grow revenue",
+      "Oversee the development of all marketing materials, including advertisements, website content, and social media posts",
+      "Manage and mentor the marketing team, ensuring they have the necessary resources and guidance to meet their goals",
+      "Analyze marketing data and insights to continuously improve marketing performance and adjust strategies as needed",
+      "Collaborate with cross-functional teams, such as sales, product, and design, to ensure cohesive and effective marketing campaigns"
+    ],
+    "educational_requirements": [
+      "Bachelor's degree in Marketing, Business Administration, Communications, or a related field",
+      "Master's degree in Marketing, Business Administration, or a related field is a plus"
+    ],
+    "experiences": [
+      "5+ years of experience in marketing or a related field, with a proven track record of successful marketing campaigns",
+      "Experience leading and managing a marketing team",
+      "Experience developing and implementing comprehensive marketing strategies across multiple channels, such as digital, social media, and print",
+      "Experience analyzing marketing data and insights to drive performance improvements"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": 2,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/2560px-Coca-Cola_logo.svg.png",
+    "job_title": "Frontend Developer",
+    "company_name": "Coca-Cola",
+    "job_place": "Remote",
+    "location": "Anywhere",
+    "job_time": "Full-time",
+    "salary": "$90,000 - $110,000",
+    "job_description": "We are seeking a talented Frontend Developer to join our team and help build innovative web applications. The ideal candidate will have a strong understanding of web development principles and be proficient in modern frontend technologies.",
+    "job_responsibility": [
+      "Build and maintain scalable, high-quality web applications with clean and efficient code",
+      "Collaborate with designers, product managers, and backend developers to develop user-friendly web interfaces and features",
+      "Ensure the technical feasibility of UI/UX designs and implement them accordingly",
+      "Stay up-to-date with emerging frontend technologies and recommend new tools and techniques as needed",
+      "Participate in code reviews, maintain code quality, and ensure best practices are being followed"
+    ],
+    "educational_requirements": [
+      "Bachelor's degree in Computer Science, Computer Engineering, or a related field",
+      "Relevant certifications or additional coursework in frontend development is a plus"
+    ],
+    "experiences": [
+      "3+ years of experience in frontend development, with a focus on building complex, interactive web applications",
+      "Strong proficiency in modern frontend technologies such as HTML, CSS, JavaScript, and popular frontend frameworks such as React or Angular",
+      "Experience with testing frameworks such as Jest or Enzyme",
+      "Familiarity with version control tools such as Git",
+      "Strong problem-solving skills and the ability to work independently and as part of a team"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": 3,
+    "company_logo": "https://www.pngmart.com/files/10/Apple-Logo-PNG-Photos.png",
+    "job_title": "Sales Representative",
+    "company_name": "Apple",
+    "job_place": "Onsite",
+    "location": "New York, NY",
+    "job_time": "Full-time",
+    "salary": "$60,000 - $80,000",
+    "job_description": "We are seeking a talented Sales Representative to join our team and help drive revenue growth. The ideal candidate will have a strong understanding of sales principles and a proven track record of success in B2B sales.",
+    "job_responsibility": [
+      "Develop and execute a sales strategy to drive revenue growth and exceed sales targets",
+      "Prospect, qualify, and close new business opportunities through a combination of outbound calls, emails, and meetings",
+      "Build and maintain relationships with key decision-makers at target companies",
+      "Collaborate with marketing and product teams to develop sales materials and presentations",
+      "Stay up-to-date with industry trends and competitive landscape to continuously improve sales techniques and strategies"
+    ],
+    "educational_requirements": [
+      "Bachelor's degree in Business Administration, Marketing, or a related field",
+      "Relevant certifications or additional coursework in sales is a plus"
+    ],
+    "experiences": [
+      "3+ years of experience in B2B sales, with a proven track record of exceeding sales targets",
+      "Experience in selling software or technology products is a plus",
+      "Strong communication and presentation skills",
+      "Ability to work independently and as part of a team",
+      "Strong problem-solving skills and the ability to overcome objections and obstacles in the sales process"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": 4,
+    "company_logo": "https://www.freepnglogos.com/uploads/tesla-logo-png-20.png",
+    "job_title": "Product Manager",
+    "company_name": "Tesla",
+    "job_place": "Onsite",
+    "location": "Seattle, WA",
+    "job_time": "Full-time",
+    "salary": "$100,000 - $120,000",
+    "job_description": "We are seeking a talented Product Manager to join our team and drive the development of innovative and user-focused products. The ideal candidate will have a strong understanding of product development principles and be able to lead cross-functional teams to successfully bring products to market.",
+    "job_responsibility": [
+      "Develop and execute a product strategy that aligns with company goals and meets customer needs",
+      "Conduct market research and analyze customer feedback to inform product decisions",
+      "Lead cross-functional teams, including engineering, design, and marketing, to develop and launch products on time and within budget",
+      "Define product requirements, create product road maps, and prioritize product features",
+      "Monitor product performance and iterate on product strategy based on market feedback and data"
+    ],
+    "educational_requirements": [
+      "Bachelor's degree in Business Administration, Computer Science, or a related field",
+      "Relevant certifications or additional coursework in product management is a plus"
+    ],
+    "experiences": [
+      "5+ years of experience in product management, with a proven track record of successfully launching products to market",
+      "Experience in developing and launching software products is a plus",
+      "Strong leadership and project management skills, with the ability to lead cross-functional teams to success",
+      "Strong communication and presentation skills, with the ability to effectively communicate product vision and strategy to stakeholders",
+      "Strong analytical and problem-solving skills, with the ability to use data to inform product decisions"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": 5,
+    "company_logo": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png",
+    "job_title": "Data Scientist",
+    "company_name": "Google",
+    "job_place": "Remote",
+    "location": "Boston, MA",
+    "job_time": "Full-time",
+    "salary": "$120,000 - $140,000",
+    "job_description": "We are seeking a talented Data Scientist to join our team and help drive data-driven decision-making across the organization. The ideal candidate will have a strong understanding of statistical analysis, machine learning, and data visualization, and be able to communicate complex findings to both technical and non-technical stakeholders.",
+    "job_responsibility": [
+      "Collect, process, and analyze large and complex datasets using statistical methods and machine learning techniques",
+      "Develop predictive models and algorithms to help drive business decisions",
+      "Create data visualizations and dashboards to communicate findings to stakeholders",
+      "Collaborate with cross-functional teams, including product management and engineering, to integrate data insights into products and features",
+      "Stay up-to-date with emerging data technologies and recommend new tools and techniques as needed"
+    ],
+    "educational_requirements": [
+      "Master's degree or PhD in Computer Science, Statistics, Data Science, or a related field",
+      "Relevant certifications or additional coursework in data science, machine learning, or statistics is a plus"
+    ],
+    "experiences": [
+      "3+ years of experience in data science, with a focus on statistical analysis and machine learning",
+      "Strong proficiency in programming languages such as Python, R, and SQL",
+      "Experience with data visualization tools such as Tableau or Power BI",
+      "Experience with distributed computing frameworks such as Hadoop or Spark is a plus",
+      "Strong problem-solving skills and the ability to work independently and as part of a team"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  },
+  {
+    "id": 6,
+    "company_logo": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png",
+    "job_title": "UI/UX Designer",
+    "company_name": "Netflix",
+    "job_place": "Remote",
+    "location": "Los Angeles, CA",
+    "job_time": "Full-time",
+    "salary": "$90,000 - $110,000",
+    "job_description": "We are seeking a talented UI/UX Designer to join our team and help create innovative and user-centered design solutions. The ideal candidate will have a strong understanding of design principles, user research, and prototyping, and be able to collaborate effectively with cross-functional teams.",
+    "job_responsibility": [
+      "Conduct user research and analyze user feedback to inform design decisions",
+      "Develop wire frames, mockups, and prototypes that effectively communicate design solutions",
+      "Collaborate with product managers, engineers, and other stakeholders to ensure designs are aligned with product goals and technical requirements",
+      "Iterate on designs based on feedback and testing, and incorporate feedback into future designs",
+      "Maintain design style guides and design systems to ensure consistency across products"
+    ],
+    "educational_requirements": [
+      "Bachelor's degree in Graphic Design, Visual Communication, Human-Computer Interaction, or a related field",
+      "Relevant certifications or additional coursework in UI/UX Design is a plus"
+    ],
+    "experiences": [
+      "3+ years of experience in UI/UX Design, with a focus on user-centered design principles and practices",
+      "Strong proficiency in design tools such as Sketch, Figma, or Adobe Creative Suite",
+      "Experience with prototyping tools such as InVision or Axure",
+      "Strong communication and collaboration skills, with the ability to effectively communicate design decisions and rationale to stakeholders",
+      "Strong problem-solving skills and the ability to work independently and as part of a team"
+    ],
+    "note": "Note that these are just example requirements and experiences, and may vary depending on the specific company and position.",
+    "contact_information": {
+      "phone": "555-555-1234",
+      "email": "careers@example.com"
+    }
+  }
+]

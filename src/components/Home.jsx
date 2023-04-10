@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import job from "../assets/interview.json";
+import { useLoaderData } from 'react-router-dom';
+import { HiLocationMarker } from "react-icons/hi";
+import { FaRegMoneyBillAlt } from "react-icons/fa";
 
 const Home = () => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     fetch('job-category-list.json')
       .then(res => res.json()).then(data => setCategories(data))
-  }, [])
+  }, []);
 
+  const jobs = useLoaderData().slice(0, 4);
+  // console.log(jobs);
 
   return (
     <div>
@@ -44,6 +49,33 @@ const Home = () => {
         </div>
       </section>
       {/* Job Category List */}
+      {/* Featured Jobs */}
+      <section className='max-w my-16'>
+        <h2 className='text-center text-2xl md:text-5xl font-semibold'>Featured Jobs</h2>
+        <p className='text-center my-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+        <div className='grid md:grid-cols-2 gap-8 mt-16 justify-items-center'>
+          {
+            jobs.map(job => <div key={job.id} className='w-full border border-secondary rounded-lg p-8 flex flex-col items-start'>
+              <img className='w-[5rem] lg:w-[10rem] mb-8' src={job.company_logo} alt="company logo" />
+              <h2 className='text-4xl font-bold'>{job.job_title}</h2>
+              <p className='text-2xl text-gray my-4'>{job.company_name}</p>
+              <div className="flex gap-4">
+                <p className='border-primary border rounded px-4 py-2 text-secondary'>{job.job_place}</p>
+                <p className='border-primary border rounded px-4 py-2 text-secondary'>{job.job_time}</p>
+              </div>
+              <div className='flex gap-8 text-gray md:text-xl my-4'>
+                <p className='flex items-center'><HiLocationMarker className='text-4xl' /> {job.location}</p>
+                <p className='flex items-center'><FaRegMoneyBillAlt className='text-4xl' /> {job.salary}</p>
+              </div>
+              <button className='btn-primary mt-auto'>View Details</button>
+            </div>)
+          }
+        </div>
+        <div className='flex justify-center mt-10'>
+          <button className='btn-primary text-2xl'>See All Jobs</button>
+        </div>
+      </section>
+      {/* Featured Jobs */}
     </div>
   );
 };
