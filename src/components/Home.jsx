@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import job from "../assets/interview.json";
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import { HiLocationMarker } from "react-icons/hi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
-const Home = () => {
+const Home = ({ jobDetails }) => {
   const [categories, setCategories] = useState([]);
   useEffect(() => {
     fetch('job-category-list.json')
       .then(res => res.json()).then(data => setCategories(data))
   }, []);
 
+  const load = useLoaderData();
 
-  const jobs = useLoaderData().slice(0, 4);
-  // console.log(jobs);
+  const [loadData, setLoadData] = useState(false);
+  let jobs = [];
+  if (!loadData) {
+    jobs = load.slice(0, 4);
+  } else {
+    jobs = load;
+  }
 
   return (
     <div>
@@ -68,12 +74,16 @@ const Home = () => {
                 <p className='flex items-center'><HiLocationMarker className='text-4xl' /> {job.location}</p>
                 <p className='flex items-center'><FaRegMoneyBillAlt className='text-4xl' /> {job.salary}</p>
               </div>
-              <button className='btn-primary mt-auto'>View Details</button>
+              <Link to='/details'><button onClick={() => jobDetails(job.id)} className='btn-primary mt-auto'>View Details</button></Link>
             </div>)
           }
         </div>
         <div className='flex justify-center mt-10'>
-          <button className='btn-primary text-2xl'>See All Jobs</button>
+          <button onClick={() => setLoadData(!loadData)} className='btn-primary text-2xl'>
+            {
+              loadData ? 'Less Jobs' : 'See All Jobs'
+            }
+          </button>
         </div>
       </section>
       {/* Featured Jobs */}
