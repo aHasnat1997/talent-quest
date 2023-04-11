@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { HiLocationMarker, HiMail, HiOutlineCurrencyDollar, HiPhone } from "react-icons/hi";
 import { HiCalendarDays } from "react-icons/hi2";
 import { AllJobsData } from '../App';
+import { addToDb } from '../utilities/fakedb';
 
 const Details = () => {
   const allData = useContext(AllJobsData);
@@ -11,7 +12,7 @@ const Details = () => {
   const details = allData.filter(data => data.id === parseInt(singleId.id));
   // console.log(details[0]);
 
-  const { job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, job_place, company_logo } = details[0];
+  const { id, job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, job_place, company_logo } = details[0];
 
 
   return (
@@ -63,7 +64,7 @@ const Details = () => {
             <p className='flex items-center gap-2 text-xl'><HiMail /> {contact_information.email}</p>
           </div>
           <div className='w-full'>
-            <button className='btn-primary w-full text-xl'>Apply Now</button>
+            <button onClick={() => addToDb(id)} className='btn-primary w-full text-xl'>Apply Now</button>
           </div>
         </div>
       </section>

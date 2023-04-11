@@ -9,7 +9,6 @@ export const AllJobsData = createContext([]);
 
 function App() {
   const jobData = useLoaderData();
-  // console.log(jobData);
   return (
     <AllJobsData.Provider value={jobData}>
       <Nav />

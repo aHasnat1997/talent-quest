@@ -1,8 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import job from "../assets/interview.json";
-import { Link, useLoaderData } from 'react-router-dom';
-import { HiLocationMarker } from "react-icons/hi";
+import { Link } from 'react-router-dom';
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { AllJobsData } from '../App';
 
@@ -15,7 +14,7 @@ const Home = () => {
   const [jobs, setJobs] = useState([]);
 
   // const data = useLoaderData();
-  
+
   useEffect(() => {
     fetch('job-category-list.json')
       .then(res => res.json()).then(data => setCategories(data))
@@ -82,8 +81,9 @@ const Home = () => {
                 <p className='border-primary border rounded px-4 py-2 text-secondary'>{job.job_time}</p>
               </div>
               <div className='flex gap-8 text-gray md:text-xl my-4'>
-                <p className='flex items-center'><HiLocationMarker className='text-4xl' /> {job.location}</p>
-                <p className='flex items-center'><FaRegMoneyBillAlt className='text-4xl' /> {job.salary}</p>
+                <p className='flex items-center gap-4'><FaRegMoneyBillAlt className='text-4xl' />
+                  {job.salary}
+                </p>
               </div>
               <Link to={`/details/${job.id}`} className='btn-primary mt-auto'>View Details</Link>
             </div>)
