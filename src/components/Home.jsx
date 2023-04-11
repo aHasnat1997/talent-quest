@@ -1,29 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Lottie from "lottie-react";
 import job from "../assets/interview.json";
 import { Link, useLoaderData } from 'react-router-dom';
 import { HiLocationMarker } from "react-icons/hi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
+import { AllJobsData } from '../App';
 
 const Home = () => {
+
+  const data = useContext(AllJobsData);
+
   const [categories, setCategories] = useState([]);
   const [loadData, setLoadData] = useState(false);
   const [jobs, setJobs] = useState([]);
 
-  const data = useLoaderData();
-  // const [data, setData] = useState([]);
-  // useEffect(() => {
-  //   fetch('https://raw.githubusercontent.com/aHasnat1997/job-api/main/featured-jobs.json')
-  //     // fetch('featured-jobs.json')
-  //     .then(res => res.json())
-  //     .then(data => setData(data))
-  // }, [])
-
-
-  // console.log(jobs);
-
-  // console.log(data);
-
+  // const data = useLoaderData();
+  
   useEffect(() => {
     fetch('job-category-list.json')
       .then(res => res.json()).then(data => setCategories(data))

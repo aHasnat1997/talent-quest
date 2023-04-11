@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { HiLocationMarker, HiMail, HiOutlineCurrencyDollar, HiPhone } from "react-icons/hi";
 import { HiCalendarDays } from "react-icons/hi2";
+import { AllJobsData } from '../App';
 
 const Details = () => {
-  const allData = useLoaderData()
-  const singleId = useParams()
+  const allData = useContext(AllJobsData);
+  const singleId = useParams();
 
   const details = allData.filter(data => data.id === parseInt(singleId.id));
   // console.log(details[0]);

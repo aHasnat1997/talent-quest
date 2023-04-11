@@ -1,19 +1,21 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLoaderData } from 'react-router-dom'
 import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
+import { createContext } from 'react'
 
 
-
+export const AllJobsData = createContext([]);
 
 function App() {
-
+  const jobData = useLoaderData();
+  // console.log(jobData);
   return (
-    <div>
+    <AllJobsData.Provider value={jobData}>
       <Nav />
       <Outlet />
       <Footer />
-    </div>
+    </AllJobsData.Provider>
   )
 }
 
