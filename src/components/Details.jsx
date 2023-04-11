@@ -4,6 +4,8 @@ import { HiLocationMarker, HiMail, HiOutlineCurrencyDollar, HiPhone } from "reac
 import { HiCalendarDays } from "react-icons/hi2";
 import { AllJobsData } from '../App';
 import { addToDb } from '../utilities/fakedb';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 
 const Details = () => {
   const allData = useContext(AllJobsData);
@@ -13,6 +15,11 @@ const Details = () => {
   // console.log(details[0]);
 
   const { id, job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, job_place, company_logo } = details[0];
+
+  const apply = id => {
+    addToDb(id);
+    toast("Apply Compleat");
+  }
 
 
   return (
@@ -64,7 +71,7 @@ const Details = () => {
             <p className='flex items-center gap-2 text-xl'><HiMail /> {contact_information.email}</p>
           </div>
           <div className='w-full'>
-            <button onClick={() => addToDb(id)} className='btn-primary w-full text-xl'>Apply Now</button>
+            <button onClick={() => apply(id)} className='btn-primary w-full text-xl'>Apply Now</button>
           </div>
         </div>
       </section>

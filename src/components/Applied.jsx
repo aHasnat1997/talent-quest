@@ -21,6 +21,7 @@ const Applied = () => {
       </header>
       <section className='max-w mt-16 flex flex-col gap-16'>
         {
+          storeData.length===0?<h1 className='text-5xl font-bold'>You are not apply for any jobs</h1>:
           storeData.map(data =>
           (<div key={data[0].id} className='p-8 border border-primary rounded-xl flex flex-col lg:flex-row items-center gap-8'>
             <img className='w-40' src={data[0].company_logo} alt="company-logo" />

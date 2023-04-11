@@ -3,6 +3,7 @@ import './App.css'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import { createContext } from 'react'
+import { ToastContainer } from 'react-toastify'
 
 
 export const AllJobsData = createContext([]);
@@ -14,6 +15,7 @@ function App() {
       <Nav />
       <Outlet />
       <Footer />
+      <ToastContainer />
     </AllJobsData.Provider>
   )
 }
