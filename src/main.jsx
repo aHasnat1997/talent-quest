@@ -11,19 +11,6 @@ import Blog from './components/Blog';
 import Details from './components/Details';
 
 
-const jobDetails = id => {
-  let details = [];
-  fetch('featured-jobs.json')
-    .then(res => res.json())
-    .then(data => setAllData(data));
-  const setAllData = data => {
-    const job = data.find(info => info.id === id);
-    details.push(job);
-  }
-
-  // console.log(details, id);
-  return (details);
-}
 
 const router = createBrowserRouter([
   {
@@ -33,7 +20,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home jobDetails={jobDetails} />,
+        element: <Home />,
         loader: () => fetch('featured-jobs.json')
       },
       {
@@ -49,8 +36,9 @@ const router = createBrowserRouter([
         element: <Blog />
       },
       {
-        path: 'details',
-        element: <Details jobDetails={jobDetails} />
+        path: 'details/:id',
+        element: <Details />,
+        loader: () => fetch('featured-jobs.json')
       }
     ]
   }

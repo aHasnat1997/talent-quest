@@ -5,22 +5,41 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { HiLocationMarker } from "react-icons/hi";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 
-const Home = ({ jobDetails }) => {
+const Home = () => {
   const [categories, setCategories] = useState([]);
+  const [loadData, setLoadData] = useState(false);
+  const [jobs, setJobs] = useState([]);
+
+  const data = useLoaderData();
+  // const [data, setData] = useState([]);
+  // useEffect(() => {
+  //   fetch('https://raw.githubusercontent.com/aHasnat1997/job-api/main/featured-jobs.json')
+  //     // fetch('featured-jobs.json')
+  //     .then(res => res.json())
+  //     .then(data => setData(data))
+  // }, [])
+
+
+  // console.log(jobs);
+
+  // console.log(data);
+
   useEffect(() => {
     fetch('job-category-list.json')
       .then(res => res.json()).then(data => setCategories(data))
   }, []);
 
-  const load = useLoaderData();
 
-  const [loadData, setLoadData] = useState(false);
-  let jobs = [];
-  if (!loadData) {
-    jobs = load.slice(0, 4);
-  } else {
-    jobs = load;
-  }
+  useEffect(() => {
+    if (!loadData) {
+      setJobs(data.slice(0, 4));
+    } else {
+      setJobs(data);
+    }
+  }, [loadData]);
+
+
+
 
   return (
     <div>
@@ -62,7 +81,7 @@ const Home = ({ jobDetails }) => {
         <p className='text-center my-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
         <div className='grid md:grid-cols-2 gap-8 mt-16 justify-items-center'>
           {
-            jobs.map(job => <div key={job.id} className='w-full border border-secondary rounded-lg p-8 flex flex-col items-start'>
+            jobs?.map(job => <div key={job.id} className='w-full border border-secondary rounded-lg p-8 flex flex-col items-start'>
               <img className='w-[5rem] lg:w-[10rem] mb-8' src={job.company_logo} alt="company logo" />
               <h2 className='text-4xl font-bold'>{job.job_title}</h2>
               <p className='text-2xl text-gray my-4'>{job.company_name}</p>
@@ -74,7 +93,7 @@ const Home = ({ jobDetails }) => {
                 <p className='flex items-center'><HiLocationMarker className='text-4xl' /> {job.location}</p>
                 <p className='flex items-center'><FaRegMoneyBillAlt className='text-4xl' /> {job.salary}</p>
               </div>
-              <Link to='/details'><button onClick={() => jobDetails(job.id)} className='btn-primary mt-auto'>View Details</button></Link>
+              <Link to={`/details/${job.id}`} className='btn-primary mt-auto'>View Details</Link>
             </div>)
           }
         </div>

@@ -31,6 +31,7 @@ export default {
       "trans": "#00000000",
       "dark": "#131820",
       "gray": "#808080",
+      "light": "#9873ff49",
     },
   },
   plugins: [],
