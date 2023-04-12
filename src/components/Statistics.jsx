@@ -1,39 +1,39 @@
 import React from 'react';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip } from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 
 const Statistics = () => {
   const data = [
     {
-      subject: 'Assignment-1',
+      subject: 'A-1',
       mark: 60
     },
     {
-      subject: 'Assignment-2',
+      subject: 'A-2',
       mark: 58
     },
     {
-      subject: 'Assignment-3',
+      subject: 'A-3',
       mark: 60
     },
     {
-      subject: 'Assignment-4',
+      subject: 'A-4',
       mark: 53
     },
     {
-      subject: 'Assignment-5',
+      subject: 'A-5',
       mark: 60
     },
     {
-      subject: 'Assignment-6',
+      subject: 'A-6',
       mark: 60
     },
     {
-      subject: 'Assignment-7',
+      subject: 'A-7',
       mark: 60
     },
     {
-      subject: 'Assignment-8',
+      subject: 'A-8',
       mark: 60
     },
   ];
@@ -42,15 +42,17 @@ const Statistics = () => {
       <header className='py-32 banner'>
         <h1 className='text-center text-6xl font-bold'>Statistics</h1>
       </header>
-      <div className='flex flex-col items-center mt-16'>
-        <h1 className='text-4xl'>Assignment marks</h1>
-        <RadarChart width={700} height={700} outerRadius="70%" data={data}>
-          <PolarGrid />
-          <PolarAngleAxis dataKey="subject" />
-          <PolarRadiusAxis />
-          <Radar name="Mike" dataKey="mark" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
-          <Tooltip />
-        </RadarChart>
+      <div style={{ maxWidth: '1250px', height: "400px", width: '100%', margin: 'auto' }}>
+        <h1 className='text-5xl text-center mt-8 font-bold'>Assignment marks</h1>
+        <ResponsiveContainer width='100%' height='100%'>
+          <RadarChart width={800} height={800} outerRadius="80%" data={data}>
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+            <PolarRadiusAxis />
+            <Radar name="Mike" dataKey="mark" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+            <Tooltip />
+          </RadarChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );
